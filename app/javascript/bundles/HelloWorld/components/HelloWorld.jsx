@@ -7,7 +7,7 @@ const HelloWorld = (props) => {
 
   return (
     <div>
-      <h3>Hello, {name}!</h3>
+      <h3 className='text-lg font-bold text-blue-600'>Hello, {name}!</h3>
       <hr />
       <form>
         <label className={style.bright} htmlFor="name">
@@ -15,6 +15,7 @@ const HelloWorld = (props) => {
           <input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
         </label>
       </form>
+      <input type="text" />
     </div>
   );
 };
