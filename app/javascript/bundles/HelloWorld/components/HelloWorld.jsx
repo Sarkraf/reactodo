@@ -11,9 +11,9 @@ const HelloWorld = (props) => {
       <hr />
       <form>
         <label className={style.bright} htmlFor="name">
-          Say hello to:
+          Say hello to :
         </label>
-          <input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <input className='input' id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
       </form>
       <input type="text" />
     </div>
