@@ -47,6 +47,12 @@ gem "dotenv-rails", "~> 3.1"
 # Use Tailwind CSS for styles
 gem "tailwindcss-rails"
 
+# Use Devise for user authentication
+gem "devise"
+
+# Use omniauth-github for GitHub OAuth
+gem "omniauth-github"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
