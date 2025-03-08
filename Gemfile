@@ -50,11 +50,16 @@ gem "tailwindcss-rails"
 # Use Devise for user authentication
 gem "devise"
 
+# Use Devise with Tailwind CSS
+gem 'devise-tailwindcssed'
+
 # Use omniauth-github for GitHub OAuth
 gem "omniauth-github"
 
 # Use omniauth-rails_csrf_protection to protect against CSRF attacks (use button_to instead of link_to for OAuth)
 gem 'omniauth-rails_csrf_protection'
+
+
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
