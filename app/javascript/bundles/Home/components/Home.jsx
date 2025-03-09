@@ -1,21 +1,26 @@
-import PropTypes from 'prop-types';
-import React, { useState } from 'react';
-import * as style from './Home.module.css';
+import PropTypes from "prop-types";
+import React, { useState } from "react";
+import * as style from "./Home.module.css";
 
 const Home = (props) => {
   const [name, setName] = useState(props.name);
 
   return (
     <div>
-      <h3 className='text-lg font-bold text-blue-600'>Hello, {name}!</h3>
+      <h3 className="text-lg font-bold text-blue-600">Hello, {name}!</h3>
       <hr />
       <form>
         <label className={style.bright} htmlFor="name">
           Say hello to :
         </label>
-        <input className='input' id="name" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <input
+          className="input"
+          id="name"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
       </form>
-      <input type="text" />
     </div>
   );
 };
