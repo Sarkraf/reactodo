@@ -51,14 +51,16 @@ gem "tailwindcss-rails"
 gem "devise"
 
 # Use Devise with Tailwind CSS
-gem 'devise-tailwindcssed'
+gem "devise-tailwindcssed"
 
 # Use omniauth-github for GitHub OAuth
 gem "omniauth-github"
 
 # Use omniauth-rails_csrf_protection to protect against CSRF attacks (use button_to instead of link_to for OAuth)
-gem 'omniauth-rails_csrf_protection'
+gem "omniauth-rails_csrf_protection"
 
+# Use simple_form for form generation
+gem "simple_form"
 
 
 group :development, :test do
