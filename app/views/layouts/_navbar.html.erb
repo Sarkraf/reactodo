@@ -22,7 +22,7 @@
                   </a>
                 </li>
                 <li><a>Settings</a></li>
-                <li><%= button_to "Logout", destroy_user_session_path, method: :delete %></li>
+                <li><%= button_to "Logout", logout_path, method: :delete %></li>
               </ul>
             </div>
           <% else %>

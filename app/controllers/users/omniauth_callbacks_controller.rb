@@ -14,4 +14,9 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   def failure
     redirect_to root_path, alert: "Échec de l'authentification."
   end
+
+  def logout
+    sign_out(current_user)
+    redirect_to root_path, notice: "Déconnexion réussie !"
+  end
 end
