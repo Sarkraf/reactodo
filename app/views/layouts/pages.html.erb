@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ReacToDo</title>
+    <%= csrf_meta_tags %>
+    <%= javascript_pack_tag 'home-bundle' %>
+    <%= stylesheet_pack_tag 'home-bundle' %>
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+
+  </head>
+
+  <body>
+
+    <% if user_signed_in?  %>
+      <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= button_to "Sign in with Github", user_github_omniauth_authorize_path %>
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

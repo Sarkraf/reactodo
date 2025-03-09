@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import * as style from './HelloWorld.module.css';
+import * as style from './Home.module.css';
 
-const HelloWorld = (props) => {
+const Home = (props) => {
   const [name, setName] = useState(props.name);
 
   return (
@@ -20,8 +20,8 @@ const HelloWorld = (props) => {
   );
 };
 
-HelloWorld.propTypes = {
+Home.propTypes = {
   name: PropTypes.string.isRequired, // this is passed from the Rails view
 };
 
-export default HelloWorld;
+export default Home;
