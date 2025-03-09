@@ -1,11 +1,11 @@
-<div class="navbar bg-base-100 shadow-sm">
+<nav class="navbar bg-base-100 shadow-sm container mx-auto">
   <div class="flex-1">
-    <%= link_to "ReacTodo", root_path, class:"btn btn-ghost text-xl" %>
+    <%= link_to "ReacTodo", root_path, class:"btn btn-ghost text-2xl" %>
   </div>
   <div class="flex gap-2">
-    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
 
           <% if user_signed_in? %>
+            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
             <div class="dropdown dropdown-end">
               <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                 <div class="w-10 rounded-full">
@@ -26,10 +26,11 @@
               </ul>
             </div>
           <% else %>
-            <%= button_to user_github_omniauth_authorize_path, class: "w-10 rounded-full avatar bg-white" do %>
-              <%= image_tag "github-logo.png", alt: "Connect with GitHub" %>
+            <%= button_to user_github_omniauth_authorize_path, class: "btn btn-ghost text-xl text-white font-bold py-2 px-4 rounded-4xl flex items-center" do %>
+              Sign in with GitHub
+              <%= image_tag "github-logo.png", alt: "GitHub Logo", class: "w-8 h-8 ml-2 rounded-full bg-white" %>
             <% end %>
           <% end %>
 
   </div>
-</div>
+</nav>
