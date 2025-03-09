@@ -50,9 +50,6 @@ gem "tailwindcss-rails"
 # Use Devise for user authentication
 gem "devise"
 
-# Use Devise with Tailwind CSS
-gem "devise-tailwindcssed"
-
 # Use omniauth-github for GitHub OAuth
 gem "omniauth-github"
 
