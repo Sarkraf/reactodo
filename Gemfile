@@ -56,6 +56,9 @@ gem 'devise-tailwindcssed'
 # Use omniauth-github for GitHub OAuth
 gem "omniauth-github"
 
+# Use Octokit for GitHub API requests
+gem "octokit"
+
 # Use omniauth-rails_csrf_protection to protect against CSRF attacks (use button_to instead of link_to for OAuth)
 gem 'omniauth-rails_csrf_protection'
 
