@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Reactodo</title>
+    <title>ReacToDo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,7 +13,8 @@
 
   <body class="flex flex-col min-h-lvh">
     <%= render "layouts/navbar" %>
-    <main class="flex flex-1">
+    <main class="h-full flex flex-1">
+      <div id="react-root"></div>
       <%= yield %>
     </main>
     <%= render "layouts/footer" %>

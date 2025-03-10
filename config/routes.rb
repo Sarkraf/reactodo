@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     delete 'logout', to: 'users/omniauth_callbacks#logout', as: :logout
   end
   root 'pages#home'
+  get 'todos', to: 'todos#index'
+  get 'todos/:id', to: 'todos#show'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

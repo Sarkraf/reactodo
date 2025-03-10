@@ -1,7 +1,8 @@
 import GitHubLoginForm from "./GitHubLoginForm";
 
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate, useInRouterContext } from "react-router";
 
 const Home = (props) => {
   const [name, setName] = useState(props.name);
