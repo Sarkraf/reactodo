@@ -5,8 +5,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useInRouterContext } from "react-router";
 
 const Home = (props) => {
-  const [name, setName] = useState(props.name);
-
+  const [name, setName] = useState(props.currentUser.name);
   return (
     <div className="h-full w-lvw bg-gradient-to-tl from-violet-500 via-cyan-600 to-cyan-600 flex flex-col justify-center items-center p-4">
       <div className="max-w-3xl bg-white/30 p-8 rounded-lg shadow-lg text-center transform transition-all duration-300 hover:scale-105">
@@ -33,7 +32,6 @@ const Home = (props) => {
 
 Home.propTypes = {
   name: PropTypes.string.isRequired, // this is passed from the Rails view
-  authenticityToken: PropTypes.string.isRequired, // this is passed from the Rails view
 };
 
 export default Home;

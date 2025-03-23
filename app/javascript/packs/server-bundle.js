@@ -1,8 +1,10 @@
-import ReactOnRails from 'react-on-rails';
+import ReactOnRails from "react-on-rails";
 
-import Home from '../bundles/Home/components/HomeServer';
+import Home from "../bundles/Home/components/HomeServer";
+import App from "../bundles/App/components/AppServer";
 
 // This is how react_on_rails can see the Home in the browser.
 ReactOnRails.register({
+  App,
   Home,
 });
