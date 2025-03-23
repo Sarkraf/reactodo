@@ -14,3 +14,5 @@
 // const images = require.context('./images', true)
 // const imagePath = (name) => images(name, true)
 import "./home-bundle";
+
+import "/app/assets/builds/tailwind.css"; // ✅ Importe le CSS pour que Webpack le surveille

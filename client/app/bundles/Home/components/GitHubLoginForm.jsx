@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import { useState } from "react";
 
-const GitHubLoginForm = ({ authenticityToken }) => {
+function GitHubLoginForm({ authenticityToken }) {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = () => {
